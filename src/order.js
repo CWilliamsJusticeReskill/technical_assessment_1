@@ -5,7 +5,8 @@
 */
 // Please write your code here
 function takeOrder(order, orderArray) {
-  if (orderArray.includes(order)) {
+  if (orderArray.length === 3) {
+    //return orderArray;
   } else {
     orderArray.push(order);
   }
@@ -18,7 +19,15 @@ console.log(takeOrder());
 */
 // Please write your code here
 function refundOrder(orderNumber, ordersArray) {
-  return order1.pop;
+  console.log(ordersArray);
+  //return ordersArray.orderNumber.pop;
+  for (var i = 0; i < ordersArray.length; i++) {
+    //const removedOrder = orderNumber.shift();
+    //return removedOrder;
+
+    ordersArray.orderNumber.pop();
+    console.log(ordersArray);
+  }
 }
 //
 /* 4
